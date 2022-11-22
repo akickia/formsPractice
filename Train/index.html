@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Train</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="header__title title">Åka tåg</h1>  
+      <article class="header__details">
+        <section>
+          <h3 class="header__station">Stockholm</h3>
+          <p class="header__text--small">10.30</p>
+        </section>
+        <section>
+          <h3 class="header__station">Göteborg</h3>
+          <p class="header__text--small">14.45</p>
+        </section>
+      </article>
+    </header>
+
+    <form class="form">
+      
+      <section class="form__section">
+        <section>
+          <input type="radio" id="class2" name="radio" class="form__radio-input">
+          <label for="class2" class="form__label">2:a klass</label>
+        </section>
+        <section>
+          <input type="radio" id="class1" name="radio" class="form__radio-input">
+          <label for="class1" class="form__label">1:a klass</label>
+        </section>
+      </section>
+
+      <section class="form__section">
+        <section class="form__section--column">
+          <label for="tickets" class="form__label">Antal biljetter</label>    
+          <select name="tickets" id="tickets" class="form__input">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </section>
+        <section class="form__section--column">
+          <label for="titel" class="form__label">Antal biljetter</label>    
+          <select name="title" id="title" class="form__input">
+            <option value="1">Ms.</option>
+            <option value="2">Mrs.</option>
+            <option value="3">Mr.</option>
+          </select>
+        </section>
+      </section>
+
+      <section class="form__section--column">
+        <label for="first-name" class="form__label">Förnamn</label>
+        <input type="text" id="first-name" value="Greta" class="form__input">
+      </section>
+      <section class="form__section--column">
+        <label for="last-name" class="form__label">Efternamn</label>
+        <input type="text" id="last-name" value="Thunberg" class="form__input">
+      </section>
+      <section>
+        <input type="checkbox" id="checkbox" class="form__input">
+        <label for="checkbox" class="form__label">Godkänner villkoren</label>
+      </section>
+      <section class="form__section--column">
+        <input type="button" value="Boka biljetter!" class="form__button">
+      </section>
+    </form>
+  </div>
+</body>
+</html>

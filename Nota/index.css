@@ -58,9 +58,11 @@ section {
   font-family: 'Oswald', sans-serif;
   padding: 2rem;
   box-shadow: -5px 5px 0px rgba(92, 41, 219, 0.2);
+  transition: all 1s
 }
 
 .form__button:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
